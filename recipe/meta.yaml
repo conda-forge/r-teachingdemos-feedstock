@@ -1,4 +1,4 @@
-{% set version = '2.10' %}
+{% set version = "2.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TeachingDemos_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TeachingDemos/TeachingDemos_{{ version }}.tar.gz
-  sha256: 2ef4c2e36ba13e32f66000e84281a3616584c86b255bca8643ff3fe4f78ed704
+  sha256: 3e75405ce1affa406d6df85e06f96381412bc7a2810b25d8c81bfe64c4698644
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,10 +36,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=TeachingDemos
   license: Artistic-2.0
-  summary: Demonstration functions that can be used in a classroom to demonstrate statistical
-    concepts, or on your own to better understand the concepts or the programming.
+  summary: Demonstration functions that can be used in a classroom to demonstrate statistical concepts, or on your own to better understand the concepts or the programming.
   license_family: OTHER
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0
 
 extra:
   recipe-maintainers:
