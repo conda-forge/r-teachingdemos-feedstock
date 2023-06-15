@@ -1,11 +1,11 @@
-About r-teachingdemos
-=====================
+About r-teachingdemos-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-teachingdemos-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=TeachingDemos
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-teachingdemos-feedstock/blob/main/LICENSE.txt)
 
 Summary: Demonstration functions that can be used in a classroom to demonstrate statistical concepts, or on your own to better understand the concepts or the programming.
 
