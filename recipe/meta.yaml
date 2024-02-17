@@ -1,4 +1,4 @@
-{% set version = "2.12.1" %}
+{% set version = "2.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TeachingDemos_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TeachingDemos/TeachingDemos_{{ version }}.tar.gz
-  sha256: f5b189c767b76594808ae678b7e4b1e0e6bf0cee80c70df9e41edfb81aaaf3a8
+  sha256: f80eb952b7d1a0cde3bed8152f9c4e9eceaa3f635209b2af9a11e785e8c0fbcc
 
 build:
   noarch: generic
